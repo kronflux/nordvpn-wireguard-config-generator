@@ -1,9 +1,11 @@
+# Config for NordVPN server {server_name}
 [Interface]
-Address = 10.5.0.2/32
 PrivateKey = {private_key}
-DNS = 1.1.1.1
+Address = 10.5.0.2/32
+DNS = {dns_servers}
 
 [Peer]
 PublicKey = {public_key}
-Endpoint = {server_ip}:51820
 AllowedIPs = 0.0.0.0/0
+Endpoint = {server_hostname}:51820
+PersistentKeepalive = 25
